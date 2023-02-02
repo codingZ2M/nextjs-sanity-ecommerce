@@ -32,7 +32,7 @@ const Home = (props:any) => {
         <div className='my-6 sm:my-10 grid gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
          
           {
-            products.map((product) => (
+            products.map((product:any) => (
               <Product product = {product} key={product._id}/>
             ))
           }
