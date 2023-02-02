@@ -5,8 +5,22 @@ import NavBar from '../components/NavBar'
 import PromoBanner from '../components/PromoBanner'
 import Footer from '../components/Footer'
 import {sanityClient} from '../lib/sanity'
+import { ProductModel, BannerModel, PromoBannerModel } from '../typings'
 
-const Home = ({products, bannerData, promoBannerData}) => {
+/*
+interface PropProducts {
+  products: [ProductModel];
+}
+interface PropBanner {
+  bannerData: [BannerModel];
+}
+interface PropPromoBanner {
+  promoBannerData: [PromoBannerModel];
+}
+*/
+const Home = (props:any) => {
+  const {products, bannerData, promoBannerData} = props;
+  
   console.log(bannerData);
   console.log(products);
 
